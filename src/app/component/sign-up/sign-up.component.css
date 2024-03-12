@@ -1,0 +1,48 @@
+.form-main {
+  margin-left: 7rem;
+  margin-top: 10rem;
+}
+
+.custom-input {
+  display: block;
+
+  width: 80%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+}
+
+.custom-select {
+  display: block;
+  width: 80%;
+
+  margin-bottom: 3rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+
+  background-color: #1a88ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+}
+
+.help-block {
+  color: red;
+}

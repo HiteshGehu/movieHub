@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="top-bar">
+        <div class="welcome-msg name">
+          <p>Welcome, {{ name | uppercase }}</p>
+          <p>MovieHub</p>
+        </div>
+        <button class="btn btn-danger" (click)="logout()">Log Out</button>
+      </div>
+      <button class="btn btn-success" (click)="allMovies()">
+        See all movies
+      </button>
+    </div>
+    <div class="col-xs-12">
+      <app-top-movies></app-top-movies>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<!-- <div class="container">
+  <div class="movie-grid">
+
+  </div>
+</div> -->
+
+<div class="row">
+  <div class="col-xs-12">
+    <div>
+      <h2>Top classics you should not miss!</h2>
+      <div class="inventory-grid">
+        <div class="movie-card" *ngFor="let movie of movies">
+          <img class="w-full" [src]="movie.poster" [alt]="movie.title" />
+          <div class="px-6 py-4">
+            <div class="movie-title">{{ movie.title }}</div>
+            <div class="movie-description">{{ movie.description }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

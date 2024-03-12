@@ -1,0 +1,97 @@
+h3 {
+  margin-top: 0;
+  text-align: center;
+}
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+input {
+  margin-left: 1rem;
+}
+.row {
+  padding: 2rem 0;
+}
+.movie-card {
+  padding: 1rem;
+  border-radius: 11px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.movie-card:hover {
+  box-shadow: 0 2x 4x rgba(0, 0, 0, 0.4);
+}
+.movie-title {
+  padding: 1rem 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+}
+.loading-text {
+  margin-top: 8rem;
+  margin-left: 10rem;
+}
+.inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+
+  margin-top: 3rem;
+}
+
+@media (max-width: 1218px) {
+  .inventory-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.inventory {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2.5rem;
+  border: 1px solid #888;
+
+  font-size: 1.5rem;
+}
+@media (max-width: 576px) {
+  .inventory {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+.inventory-details {
+  font-size: 1.75rem;
+  gap: 1rem;
+}
+
+.inventory-details p span {
+  font-weight: bold;
+}
+
+.inventory-btn {
+  display: flex;
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .inventory {
+    padding: 1.5rem;
+    font-size: 1.25rem;
+  }
+  .inventory-details p {
+    text-align: center;
+  }
+  .inventory-btn {
+    justify-content: center;
+  }
+}
