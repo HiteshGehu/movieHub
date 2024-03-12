@@ -13,7 +13,11 @@ export class LoginComponent {
   constructor(private route: Router, private authService: AuthService) {}
   onSubmit(form: NgForm) {
     this.authService.setUser(form.value.name);
-    this.route.navigate(['/home']);
+    if (this.authService.signIn(form.value.name, form.value.password)) {
+      this.route.navigate(["/home"]);
+    } else {
+      alert("user not found!");
+    }
   }
   create() {
     this.route.navigate(['/sign-up']);
